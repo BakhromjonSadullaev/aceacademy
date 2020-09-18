@@ -1,0 +1,1094 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins 'sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logoLine {
+    display: flex;
+    width: 80px;
+    justify-content: space-around;
+    align-items: center;
+    height: 3px;
+    background-color: red;
+}
+
+.navbar-brand {
+    cursor: pointer;
+    justify-content: space-around;
+    width: 200px;
+
+
+}
+
+.navbar-brand:hover {
+    text-shadow: 3px 3px 20px red;
+    transition: 0.3s ease;
+}
+
+nav {
+    display: flex;
+    min-height: 8vh;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 70%;
+    margin: 0 auto;
+    color: white;
+
+}
+
+
+
+.nav-links {
+    display: flex;
+    width: 50%;
+    margin-left: auto;
+
+    justify-content: space-around;
+}
+
+.nav-links li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14pt;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px;
+    font-weight: 300;
+}
+
+.nav-links li a:hover {
+    color: rgb(182, 0, 0);
+    transition: 0.4s ease-in-out;
+}
+
+header {
+
+
+    height: 100vh;
+    background: url(./images/avel-chuklanov-DUmFLtMeAbQ-unsplash.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+
+header>* {
+    position: relative;
+    z-index: 2;
+}
+
+header::after {
+    content: "";
+    background: black;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.header-text {
+    width: 30%;
+
+    padding: 15rem 0 0 0;
+    margin-left: 15%;
+
+}
+
+.header-text h1 {
+    font-size: 29pt;
+}
+
+.apply-btn button {
+    border: none;
+    padding: 15px 30px;
+    position: relative;
+    outline: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    font-weight: 700;
+    background: #c44646;
+    border: 3px solid rgb(204, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(39, 39, 39);
+
+}
+
+.apply-btn button:hover {
+    background: rgb(204, 0, 0);
+    transition: 0.7s ease;
+    color: whitesmoke;
+}
+
+.apply-btn {
+
+    padding-top: 2rem;
+}
+
+
+
+
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    background: rgba(240, 240, 240, 0.911);
+    transition: 0.2s ease-in;
+    z-index: 3;
+    display: flex;
+    min-height: 8vh;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 15rem;
+    width: 100%;
+    margin: 0 auto;
+    color: black;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.fixed-nav li a {
+    color: black;
+    transition: all 0.2s ease;
+}
+
+.show-link {
+    visibility: visible;
+    z-index: 100;
+}
+
+
+
+
+.container-1 {
+    font-family: 'Poppins', sans-serif;
+    background: #f8f9fa;
+
+    flex-wrap: wrap;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+.container-1 h1 {
+    color: rgba(0, 0, 0, 0.8);
+
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 5rem;
+    font-size: 32pt;
+
+    width: 70%;
+    letter-spacing: 3px;
+}
+
+.course-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 70%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4rem;
+    padding-bottom: 5rem;
+
+}
+
+.course-container div {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    background: rgb(255, 255, 255);
+    width: 350px;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px 0;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+
+.course-container div:hover {
+    box-shadow: 0 14px 28px rgba(255, 151, 151, 0.25), 0 10px 10px rgba(179, 77, 77, 0.22);
+}
+
+
+
+
+.course-container div p {
+    margin: 0.5rem 0;
+
+}
+
+.course-container button {
+    border: none;
+    padding: 10px 50px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(204, 0, 0);
+    background: none;
+    font-family: 'Poppins';
+    font-weight: bolder;
+    letter-spacing: 3px;
+    outline: none;
+}
+
+.course-container button:hover {
+    border: none;
+    background: rgb(223, 1, 1);
+    color: white;
+}
+
+
+
+
+.container-2 {
+    width: 100%;
+
+    padding-bottom: 4rem;
+    background: white;
+    background-repeat: no-repeat;
+    font-family: 'Poppins';
+}
+
+.container-2 h1 {
+    font-family: 'Bebas Neue';
+    text-align: center;
+    letter-spacing: 5px;
+    margin-top: 6rem;
+    font-size: 40pt;
+    color: rgb(63, 63, 63);
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+
+.about-container {
+    width: 70%;
+    margin: auto;
+
+    display: flex;
+
+
+
+    margin: auto;
+}
+
+.about-text {
+
+    text-align: center;
+    width: 40%;
+    margin-top: 11rem;
+    position: relative;
+    border-radius: 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    bottom: 4rem;
+    right: 2rem;
+    background: rgba(0, 0, 0, 0.836);
+}
+
+
+
+
+
+/*========= Container 3 Style Here ================*/
+
+.container-3 {
+
+    padding-bottom: 3rem;
+    font-family: 'Poppins';
+
+}
+
+.container-3 .cont-h1 {
+    margin-top: 7rem;
+    font-family: 'Bebas Neue';
+    text-align: center;
+    letter-spacing: 5px;
+
+    font-size: 40pt;
+    color: rgb(63, 63, 63);
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.cont-h4 {
+    margin-top: -50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: 'Bebas Neue';
+    font-size: 16pt;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: rgb(63, 63, 63);
+}
+
+
+.wrapper {
+
+    padding: 5px;
+    width: 70%;
+    height: auto;
+    overflow: hidden;
+    margin: auto;
+
+    margin-bottom: 4rem;
+}
+
+.item {
+    color: rgb(63, 63, 63);
+    background: #FFFFFF;
+    margin-top: 10px;
+    width: 90%;
+    height: 350px;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    margin-bottom: 10px;
+}
+
+.img-profile {
+    padding-top: 1rem;
+    margin: auto;
+
+    justify-content: center;
+    display: flex;
+
+}
+
+.img-profile img {
+    background: #ffffff;
+    box-shadow: inset 20px -20px 60px #d9d9d9,
+        inset -20px 20px 60px #ffffff;
+    -webkit-transition: -webkit-box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease;
+    -webkit-box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.06);
+}
+
+.img-profile img:hover {
+    -webkit-box-shadow: 0px 0px 0px 12px rgba(255, 0, 0, 0.1);
+    box-shadow: 0px 0px 0px 12px rgba(255, 0, 0, 0.1);
+}
+
+
+
+.profile-content {
+
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 11pt;
+}
+
+.profile-content h1 {
+    font-size: 13pt;
+    color: #7a0000;
+}
+
+.profile-content h4 {
+    font-size: 10pt;
+}
+
+
+
+.card-line {
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 65%;
+    height: 2px;
+    background: red;
+}
+
+.profile-info {
+
+    margin-top: 30px;
+
+}
+
+.profile-info p {
+
+    font-size: 11pt;
+    margin-left: 30px;
+}
+
+
+.owl-prev {
+    outline: none;
+
+}
+
+.owl-next {
+    outline: none;
+}
+
+/*============ Ends container 3 styles========*/
+
+
+
+/*==================== Container 4 styles here =====*/
+
+
+
+
+.container-4 {
+    width: 100%;
+
+    background: #fff7f8
+        /*#f8f9fa*/
+    ;
+
+    margin: auto;
+}
+
+
+.container-4 .top-h1 {
+    padding-top: 3rem;
+    font-family: "Bebas Neue";
+    text-align: center;
+    font-size: 40pt;
+    letter-spacing: 5px;
+    color: rgb(63, 63, 63);
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-bottom: 6rem;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+}
+
+
+
+
+.contact-details {
+    display: flex;
+    align-items: center;
+    width: 390px;
+    height: 400px;
+
+    margin-right: 2rem;
+    justify-content: center;
+}
+
+.vert-line {
+    width: 2px;
+    height: 300px;
+    background: rgb(185, 0, 0);
+}
+
+.contact-info {
+    padding: 0 1rem;
+}
+
+.contact-info h4 {
+    font-family: 'Poppins';
+    color: #001427;
+
+}
+
+.contact-info h4 i {
+    color: rgb(112, 0, 0);
+}
+
+.adress1 {
+    margin-top: -10px;
+}
+
+.adress2 {
+    margin-bottom: 15px;
+}
+
+.num2 {
+    margin-bottom: 15px;
+}
+
+
+.social-icons {
+
+    margin-left: 0.5rem;
+}
+
+.social-icons i {
+    padding: 10px;
+    cursor: pointer;
+    color: #001427;
+}
+
+.social-icons i:hover {
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container-4 form {
+
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow: 7px 7px 14px #666666,
+        -7px -7px 14px #ffffff;
+    width: 330px;
+    height: 550px;
+    text-align: center;
+    background: #001427;
+    border-radius: 10px;
+}
+
+.title {
+    padding-top: 1.5rem;
+    color: rgb(240, 240, 240);
+    margin-bottom: 2rem;
+    font-family: 'Bebas Neue';
+    font-weight: 200;
+    font-size: 25pt;
+    letter-spacing: 2px;
+}
+
+
+form div {
+    margin: 2rem 0;
+}
+
+input::placeholder {
+    color: rgb(219, 34, 34);
+}
+
+input::placeholder:focus {
+    display: none;
+}
+
+
+form input {
+
+    padding: 1rem 2rem;
+    font-size: 12pt;
+    color: rgb(221, 221, 221);
+
+    background: #001427;
+    box-shadow: inset 5px 5px 14px #000810,
+        inset -5px -5px 14px #00203e;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+}
+
+
+.message textarea {
+    font-size: 12pt;
+    background: #001427;
+    box-shadow: inset 48px 48px 57px #000810,
+        inset -48px -48px 57px #00203e;
+    border: none;
+    color: rgb(219, 34, 34);
+    outline: red;
+}
+
+textarea::placeholder {
+    color: rgba(255, 0, 0, 0.616);
+}
+
+form button {
+    outline: none;
+    padding: 0.8rem 4rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background: rgb(197, 10, 10);
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+
+form button:hover {
+    transition: 0.3s ease;
+    background: rgb(230, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.select-selected.select-arrow-active:after {
+
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+
+.custom-select {
+    position: relative;
+    font-family: Arial;
+    margin: auto;
+
+}
+
+.custom-select select {
+    display: none;
+    /*hide original SELECT element:*/
+}
+
+.select-selected {
+    background-color: rgb(211, 211, 211);
+
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 15px;
+    right: 20px;
+    width: 0;
+    height: 0;
+    color: white;
+    border: 6px solid transparent;
+    border-color: rgb(255, 0, 0) transparent transparent transparent;
+}
+
+
+.select-selected {
+
+    background: rgb(248, 248, 248);
+    border-radius: 15px;
+    color: rgb(224, 14, 14);
+    background: linear-gradient(145deg, #001223, #00152a);
+    box-shadow: 15px 15px 30px #000810,
+        -15px -15px 30px #00203e;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,
+.select-selected {
+
+    padding: 10px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(173, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+
+}
+
+/*style items (options):*/
+.select-items {
+    position: absolute;
+    background-color: rgb(78, 78, 78);
+    top: 10%;
+    left: 0;
+    right: 0;
+    color: whitesmoke;
+
+}
+
+.select-items div {
+    margin: 0;
+
+}
+
+
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+    display: none;
+
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(194, 0, 0, 0.1);
+
+}
+
+
+
+/*==========End of Container - 4 == === == == == */
+
+
+
+.container-5 {
+    width: 100%;
+    height: 27vh;
+
+    background: linear-gradient(145deg, #9c0000, #b90000);
+    /* background: url(./images/james-lee-YpDkIh137ws-unsplash.jpg);*/
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.footer {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer h2 {
+    padding-top: 30px;
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-weight: 100;
+    letter-spacing: 3px;
+    font-size: 20pt;
+}
+
+
+.icon-footer {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 15%;
+    margin: auto;
+    margin-top: -50px;
+}
+
+.icon-container {
+    outline: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #9c0000, #b90000);
+    box-shadow: 11px 11px 11px #9f0000,
+        -11px -11px 11px #bb0000;
+}
+
+
+.icon-container i {
+    font-size: 20pt;
+    color: rgb(228, 235, 228);
+
+}
+
+
+.change-facebook {
+    padding: 8px 14px;
+}
+
+
+
+
+/* =========== Responsive Styling =======*/
+
+
+@media screen and (max-width:1400px) and (min-width:970px) {
+
+
+    .about-text {
+        position: relative;
+        right: 35rem;
+        bottom: 8rem;
+        min-width: 80%;
+    }
+}
+
+
+
+
+@media screen and (max-width:1500px) {
+    .nav-links {
+        width: 80%;
+    }
+
+    .fixed-nav {
+        padding: 0 10rem;
+    }
+
+    .icon-footer {
+        width: 30%;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:970px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background-color: rgba(240, 240, 240, 0.952);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: all 0.5s ease;
+        z-index: 2;
+    }
+
+    .nav-links li {
+        opacity: 0;
+
+    }
+
+    .nav-links li a {
+        color: black;
+        font-weight: 500;
+        text-shadow: none;
+    }
+
+    .nav-links li a:hover {
+        color: rgb(197, 5, 5);
+    }
+
+    nav {
+        width: 100%;
+        background-color: rgba(240, 240, 240, 0.952);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+    }
+
+    .navbar-brand {
+        color: black;
+        margin-left: 30px;
+    }
+
+
+    .burger {
+        display: block;
+        margin-right: 30px;
+    }
+
+    .burger div {
+        background-color: black;
+    }
+
+    .header-text {
+        padding-top: 14rem;
+        width: 70%;
+
+    }
+
+    .header-text h1 {
+        color: rgb(233, 233, 233);
+    }
+
+    .apply-btn button {
+        background: rgb(218, 41, 41);
+        border: none;
+    }
+
+    .fixed-nav {
+        padding: 0;
+    }
+
+    .img-container {
+        display: none;
+    }
+
+    .container-1 h1 {
+        font-size: 18pt;
+        padding-top: 40px;
+    }
+
+    .course-container {
+        margin-top: 60px;
+    }
+
+
+
+    .about-text {
+        justify-content: center;
+        position: relative;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        margin-top: -2rem;
+
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .about-text h1 {
+        font-size: 12pt;
+
+    }
+
+    .about-text h3 {
+        font-size: 10pt;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
+
+    .item {
+        margin-left: 12px;
+    }
+
+    .container-4 svg {
+        display: none;
+    }
+
+
+
+    .footer h2 {
+        padding-top: 0;
+        font-size: 12pt;
+    }
+
+    .icon-footer {
+        width: 60%;
+        margin-top: 0;
+
+    }
+
+    .icon-footer i {
+        font-size: 18px;
+    }
+}
+
+/*======== End of Mobile Rsponsive =========*/
+
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.togle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.togle .line2 {
+    opacity: 0;
+}
+
+.togle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+
+
+
+
+.fadeToggleHeader {
+    z-index: 1;
+}
